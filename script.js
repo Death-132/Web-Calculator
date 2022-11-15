@@ -1,0 +1,14 @@
+// This function clears the display-box
+function clearDisplay() {
+    document.getElementById("result").value = "";
+}
+// This function displays the value
+function display(value) {
+    document.getElementById("result").value += value;
+}
+// This function evaluates the expression and return result
+function calculate() {
+    let p = document.getElementById("result").value;
+    let q = eval(p);
+    document.getElementById("result").value = q;
+}
